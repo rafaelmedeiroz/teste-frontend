@@ -56,4 +56,4 @@ Faça download clicando [aqui](https://github.com/SENAI-NTM/teste-backend/blob/m
 e digite ng serve no cmd. Link de lançamento abaixo. 
 Link: http://localhost:4200/
 
-por favor clicar no botão Exibir Relatório.
+por favor clicar no botão Exibir Relatório .
