@@ -8,21 +8,31 @@ div{
 }
 
 h2{
-  position: absolute;
-  left: 45%;
-  top: 5%;
-  font-family: Arial;
+  position: relative;
+  margin-left: 45%;
+  margin-top: 20px;
+  font-family: Arial,sans-serif;
 }
 
 button{
-  position: absolute;
-  left: 46%;
-  top: 15%;
+  position: relative;
+  margin-left: 45%;
+  margin-top: 30px;
 }
 
 .mytable{
-  margin-top: 25%;
   width: 90%;
+  margin-top: 5%;
   margin-right: auto;
   margin-left: auto;
+}
+
+#tableTotal{
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#total{
+  width: 41%;
 }

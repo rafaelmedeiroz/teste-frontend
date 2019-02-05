@@ -1,7 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {AppService} from "./app.service";
-import {AppModule} from "./app.module";
 import {RegionalAverage} from "./regionalAverage";
+
+
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,8 @@ import {RegionalAverage} from "./regionalAverage";
 export class AppComponent implements OnInit {
   title = 'teste-frontend';
   averages: RegionalAverage[] = [];
+  nationalAverage: number;
+  showTable = false;
   constructor(private appService: AppService) {
   }
   ngOnInit() {
@@ -18,6 +21,8 @@ export class AppComponent implements OnInit {
   searchJson() {
     this.appService.searchJson().subscribe((json: any) => {
       this.averages = json.regionals.map(r => new RegionalAverage(r));
+      this.nationalAverage = json.national.toFixed(2);
+      this.showTable = true;
     });
   }
 }

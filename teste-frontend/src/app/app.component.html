@@ -1,15 +1,26 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="container-fluid">
   <h2>Relatório</h2>
-  <button class="btn btn-success" (click)="searchJson()">Click Me</button>
-  <!--<ul>
-    <li *ngFor="let average of averages">{{ average.regional }}:{{ average.average }}</li>
-  </ul>-->
-  <table class="table table-striped table-bordered mytable">
-    <tr *ngFor="let average of averages">
-      <td>{{average.regional}}</td>
-      <td>{{average.average.toFixed(2)}}%</td>
-    </tr>
-  </table>
+  <button class="btn btn-success" (click)="searchJson()">Exibir Relatório</button>
+  <div class="html-reporter" *ngIf="showTable">
+    <table class="table table-striped table-bordered mytable">
+      <tr>
+        <td>Regionais</td>
+        <td>Médias</td>
+      </tr>
+      <tr *ngFor="let average of averages">
+        <td>{{average.regional}}</td>
+        <td>{{average.average.toFixed(2)}}%</td>
+      </tr>
+    </table>
+
+    <table id="tableTotal" class="table table-striped table-bordered">
+      <tr>
+        <td>Média Nacional</td>
+        <td id="total">{{nationalAverage}}%</td>
+      </tr>
+    </table>
+  </div>
+
 </div>
 

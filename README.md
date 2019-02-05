@@ -39,3 +39,21 @@ Faça download clicando [aqui](https://github.com/SENAI-NTM/teste-backend/blob/m
 4. Você tem uma semana (7 dias) para a finalização do teste, a partir da data de envio do e-mail.
 5. Se não conseguir finalizar os testes, não se preocupe, envie a sua solução no estágio de desenvolvimento que estiver.
 
+
+
+## instruções para rodar solução
+
+1- baixe o projeto backend e leia o arquivo readme link abaixo.
+ 
+ link: https://github.com/rafaelmedeiroz/teste-backend
+ 
+ Obs: o projeto do teste-frontend só funcionará se o projeto testeBackend estiver rondado em localhost:8080!
+ 
+2- baixe e instale o node.js e o angularCLI conforme link abaixo pois o projeto foi desenvolvido em angularCLI.
+    link: https://angular.io/guide/quickstart
+
+3-clone o projeto para uma pasta navegue até a pasta do projeto e entre na pasta do módulo via cmd (mesmo nome do projeto)
+e digite ng serve no cmd. Link de lançamento abaixo. 
+Link: http://localhost:4200/
+
+por favor clicar no botão Exibir Relatório.
